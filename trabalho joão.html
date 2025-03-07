@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho João Alura</title>
+    <style>
+        .profile-image {
+            border-radius: 15px;
+            width: 150px;
+            height: 150px;
+        }
+        .book-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border: 2px solid #007bff;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .book-opinion {
+            display: none;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 10px;
+        }
+        /* Estilização da apresentação */
+        .presentation-box {
+            border: 2px solid #800080;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #f9f9f9;
+        }
+        .presentation-box h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .presentation-box p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .badge {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container text-center">
+        <div class="presentation-box">
+            <img src="./WhatsApp Image 2025-03-07 at 13.27.43.jpeg" alt="João" class="profile-image">
+            <p class="lead">Eu sou o João</p>
+            <h1>Eu sou um amante de livros e música!</h1>
+            <p>Olá! Meu nome é João, e sou alguém que busca inspiração nos livros e na música.</p>
+            <p>Adoro livros, especialmente os de fantasia e ficção científica.</p>
+            <p>Também gosto muito de tocar violão.</p>
+        
+            <p>Minhas habilidades:</p>
+            <div>
+                <p class="badge bg-secondary">Leitura</p>
+                <p class="badge bg-secondary">Futebol</p>
+                <p class="badge bg-secondary">Desenho</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus Livros Favoritos</h2>
+        <div class="row">
+            <!-- Livro 1 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="./O-pequeno-principe---capa-azul.webp" class="card-img-top" alt="O Pequeno Príncipe">
+                    <div class="card-body">
+                        <h5 class="card-title">O Pequeno Príncipe</h5>
+                        <p class="card-text">Um clássico que ensina sobre amizade, amor e os valores essenciais da vida.</p>
+                        <button class="btn btn-primary" onclick="showOpinion('book1-opinion')">Minha opinião</button>
+                        <div id="book1-opinion" class="book-opinion">
+                            <p>O Pequeno Príncipe é um dos livros mais emocionantes que já li. Ele tem uma maneira única de nos ensinar sobre a simplicidade da vida e a importância de olhar o mundo com os olhos de uma criança.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 2 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="./1984.jpg" class="card-img-top" alt="1984">
+                    <div class="card-body">
+                        <h5 class="card-title">1984</h5>
+                        <p class="card-text">Uma obra distópica que nos faz refletir sobre o controle social e a liberdade individual.</p>
+                        <button class="btn btn-primary" onclick="showOpinion('book2-opinion')">Minha opinião</button>
+                        <div id="book2-opinion" class="book-opinion">
+                            <p>1984 é um livro que me faz pensar sobre as liberdades que muitas vezes damos por garantidas. A forma como Orwell descreve um mundo totalitário é assombrosa e profunda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 3 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="./harry potter.jpg" class="card-img-top" alt="Harry Potter e a Pedra Filosofal">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter e a Pedra Filosofal</h5>
+                        <p class="card-text">A primeira aventura de Harry Potter em um mundo de magia e amizade.</p>
+                        <button class="btn btn-primary" onclick="showOpinion('book3-opinion')">Minha opinião</button>
+                        <div id="book3-opinion" class="book-opinion">
+                            <p>Harry Potter me cativou desde a primeira página. A mistura de magia, aventura e amizade é simplesmente irresistível. A jornada de Harry é uma das mais épicas da literatura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 4 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="./51Fe45NGwkL.jpg" class="card-img-top" alt="A Arte da Guerra">
+                    <div class="card-body">
+                        <h5 class="card-title">A Arte da Guerra</h5>
+                        <p class="card-text">Um livro sobre estratégias militares e filosofias de liderança.</p>
+                        <button class="btn btn-primary" onclick="showOpinion('book4-opinion')">Minha opinião</button>
+                        <div id="book4-opinion" class="book-opinion">
+                            <p>A Arte da Guerra é um livro que me ensinou muito sobre estratégia e tomada de decisões. Apesar de ser focado em guerra, seus ensinamentos são aplicáveis à vida cotidiana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 5 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="./hobbit.jpg" class="card-img-top" alt="O Hobbit">
+                    <div class="card-body">
+                        <h5 class="card-title">O Hobbit</h5>
+                        <p class="card-text">A aventura de Bilbo Bolseiro em um mundo de fantasia e coragem.</p>
+                        <button class="btn btn-primary" onclick="showOpinion('book5-opinion')">Minha opinião</button>
+                        <div id="book5-opinion" class="book-opinion">
+                            <p>O Hobbit é um livro fantástico que mistura aventura, amizade e a busca por algo maior. A história de Bilbo é uma das mais inspiradoras que já li.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 6 -->
+            <div class="col-md-4">
+                <div class="card book-card">
+                    <img src="./Senhor dos Aneis.jpg" class="card-img-top" alt="O Senhor dos Anéis">
+                    <div class="card-body">
+                        <h5 class="card-title">O Senhor dos Anéis</h5>
+                        <p class="card-text">Uma das maiores sagas de fantasia já escritas, repleta de personagens incríveis e batalhas épicas.</p>
+                        <button class="btn btn-primary" onclick="showOpinion('book6-opinion')">Minha opinião</button>
+                        <div id="book6-opinion" class="book-opinion">
+                            <p>O Senhor dos Anéis é uma das histórias mais épicas que já li. A complexidade dos personagens e a grandiosidade da história são incomparáveis. J.R.R. Tolkien é um mestre na criação de mundos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container py-5">
+        <p class="my-5 text-center">© Produzido por João</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Função para mostrar a opinião sobre os livros
+        function showOpinion(bookId) {
+            var opinionContainer = document.getElementById(bookId);
+            if (opinionContainer.style.display === 'none' || opinionContainer.style.display === '') {
+                opinionContainer.style.display = 'block';
+            } else {
+                opinionContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
